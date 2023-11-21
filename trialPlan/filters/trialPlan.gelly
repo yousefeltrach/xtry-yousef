@@ -1,0 +1,4 @@
+fragment Filter($session: Session) on TrialPlan {
+  *
+  [where shopId == $session.shopId]
+}

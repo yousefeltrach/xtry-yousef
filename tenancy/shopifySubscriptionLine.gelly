@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifySubscriptionLine {
+  *
+  [where shopId == $session.shopId]
+}

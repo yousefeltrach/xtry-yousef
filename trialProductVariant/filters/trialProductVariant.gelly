@@ -1,0 +1,4 @@
+fragment Filter($session: Session) on TrialProductVariant {
+  *
+  [where shopId == $session.shopId]
+}

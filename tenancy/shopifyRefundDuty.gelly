@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifyRefundDuty {
+  *
+  [where shopId == $session.shopId]
+}

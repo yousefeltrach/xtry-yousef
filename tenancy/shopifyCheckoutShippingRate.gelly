@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifyCheckoutShippingRate {
+  *
+  [where shopId == $session.shopId]
+}

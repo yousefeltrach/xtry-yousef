@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifyOrderAdjustment {
+  *
+  [where shopId == $session.shopId]
+}

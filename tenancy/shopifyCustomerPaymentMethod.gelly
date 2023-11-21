@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifyCustomerPaymentMethod {
+  *
+  [where shopId == $session.shopId]
+}

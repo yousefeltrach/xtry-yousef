@@ -1,0 +1,5 @@
+
+fragment Filter($session: Session) on ShopifyCustomerAddress {
+  *
+  [where shopId == $session.shopId]
+}

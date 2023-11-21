@@ -1,0 +1,31 @@
+ .animated-button-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  /* color: #5c6ac4;  */
+  border-radius: 3px;
+  width: 40px;
+  transition: width 0.3s ease;
+}
+
+.animated-button {
+  padding: 0 10px;
+  width: 100%;
+  justify-content: start;
+}
+
+.animated-button .Polaris-Button__Content {
+  visibility: hidden; 
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.animated-button:hover .Polaris-Button__Content {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.animated-button-wrapper:hover {
+  width: 100px; 
+};
